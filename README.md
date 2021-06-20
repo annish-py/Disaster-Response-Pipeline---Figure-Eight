@@ -117,14 +117,25 @@ To execute the app follow the instructions:
 
 <a id='images'></a>
 ### 7. Data Visualizations
+![image1](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/newplot.png)
+![image2](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/newplot%20(1).png)
+![image3](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/newplot%20(2).png)
+![image4](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/newplot%20(3).png)
+![image5](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/newplot%20(4).png)
 
 
 <a id='results'></a>
 ### 8. Results
-
+When a disaster message is submitted to the Disaster Response Pipeline and the Classify Message button is invoked, the app shows how the outcomes it classified by highlighting the categories in green. 
+For example for the message "We have nothing here and urgently require clean water, food, clothes, doctors, medicines and tents for shelter" 
+The outcome we get are the following categories: 'Request', 'Aid Related', 'Food', 'Water', 'Medical', 'Medical Products', 'Shelter'
+![image6](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/Result.PNG)
 
 <a id='license'></a>
 ### 9. License and Acknowledgement:
    Thanks to [Udacity](https://www.udacity.com/school-of-data-science) - Data Science Nano Degree and to [Figure Eight](https://appen.com/) for providing messages dataset to train the model.
 
 
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
+  ##### Contact Me at [LinkedIn](https://www.linkedin.com/in/annishprashanth/)
