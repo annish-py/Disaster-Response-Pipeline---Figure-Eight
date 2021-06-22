@@ -1,6 +1,6 @@
-## Disaster Response Pipelines
-### Table of Contents
+# Disaster Response Pipeline Project
 
+#### Table of Contents
 
 <a href="#intro">1. Project Motivation
 
@@ -30,27 +30,22 @@ The goal of the project is to classify the disaster messages into categories. In
 <a id='desc'></a>
 ### 2. Project Description
 
-The project has three componants which are:
+The project structure is as explained below and
+It has the below components,
+##### ETL Pipeline: 
+process_data.py -  which is a python script that fetches the messages and categories datasets and
+merges them a single dataset, prepares and cleans the underlying data, and finally stores it in a SQLite databasefile
 
-#### ETL Pipeline: [process_data.py](https://github.com/Suveesh/Disaster-Response-Pipeline/blob/main/data/process_data.py) file contain the script to create ETL pipline which:
 
-- [x] Loads the messages and categories datasets.
-- [x] Merges the two datasets
-- [x] Cleans the data
-- [x] Stores it in a SQLite database
 
-#### ML Pipeline: [train_classifier.py](https://github.com/Suveesh/Disaster-Response-Pipeline/blob/main/model/train_classifier.py) file contain the script to create ML pipline which:
+##### ML Pipeline:
+train_classifier.py -  which is a python file which that builds a text processing and machine learning pipeline
+post that trains and tunes a data model using GridSearchCV, and finally exports the data model as a pickle file, classifier.pkl 
 
-- [x] Loads data from the SQLite database
-- [x] Splits the dataset into training and test sets
-- [x] Builds a text processing and machine learning pipeline
-- [x] Trains and tunes a model using GridSearchCV
-- [x] Outputs results on the test set
-- [x] Exports the final model as a pickle file
 
-#### Flask Web App: the web app enables the user to enter a disaster message, and then view the categories of the message.
 
-- [x] The web app also contains some visualizations that describe the data.
+##### Flask Web App:
+This web app enables the user to input a emergency message times of disaster, and the invocation of the same will then output the categories of the message. The web app also provides various  visualizations for the data insights arrived.
 
 <a id='files'></a>
 ### 3. Files Descriptions
@@ -81,7 +76,7 @@ The project has three componants which are:
 <a id='install'></a>
 ### 4. Installations
 
-All libraries are available in Anaconda distribution of Python. The used libraries are:
+All libraries are available in Anaconda distribution of Python. The used libraries are:F
 
 - pandas, re, sys, json, pickle
 - sklearn, nltk
@@ -122,6 +117,7 @@ To execute the app follow the instructions:
 When a disaster message is submitted to the Disaster Response Pipeline and the Classify Message button is invoked, the app shows how the outcomes it classified by highlighting the categories in green. 
 For example for the message "We have nothing here and urgently require clean water, food, clothes, doctors, medicines and tents for shelter" 
 The outcome we get are the following categories: 'Request', 'Aid Related', 'Food', 'Water', 'Medical', 'Medical Products', 'Shelter'
+
 ![image6](https://github.com/annish-py/Disaster-Response-Pipeline---Figure-Eight/blob/main/workspace/Result.PNG)
 
 <a id='license'></a>
